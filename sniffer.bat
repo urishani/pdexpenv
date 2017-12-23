@@ -1,0 +1,1 @@
+java -cp bin/pdexpenv.jar;lib/jdom.jar tools.html.Sniffer 8082

@@ -1,0 +1,548 @@
+# project level global properties
+Project.Title = Programming Methodology Experiment
+Project.Locale = he
+Project.Size.Width = 1024
+Project.Size.Height = 735
+Project.TempDir = tmp
+Project.WorkDir = data
+Project.Web.Root = data/www
+Project.HelpDir = data/Help
+Project.Status.Template = Status.Template.html
+Project.Task.Difficulty = .1
+Project.Table.Columns = 20
+Project.Table.Rows = 25
+Project.Table.RowSpread = 5
+Project.Table.ColumnSpread = 5
+
+# Task list:
+TaskPlan.Phase1 = 2 7 9 1 5 3 6 8 2 7 5 9 3 6 2 4 1 8 5 3 6 1 9 4 3 1 6 9 2 5 6 8 2 9 4 3 5 8 3 6 4 7 
+TaskPlan.Phase2 = 2 7 9 1 5 3 6 8 2 7 5 9 3 6 2 4 1 8 5 3 6 1 9 4 3 1 6 9 2 5 6 8 2 9 4 3 5 8 3 6 4 7
+
+# Timing and repeat setings:
+# Phase delay (length of one round) is in minutes:
+Timer.Delay.Phase1.Test = 10
+Timer.Delay.Phase2.Test = 10
+# Phase round rest time is in seconds:
+Timer.Delay.Phase1.Rest = 10
+Timer.Delay.Phase2.Rest = 10
+# number of rounds per phase:
+Block.Repeats.Phase1 = 5
+Block.Repeats.Phase2 = 0
+
+#color configuration:
+Project.Window.Background = 000033
+Project.Window.Foreground = FFFFFF
+Project.Window.Header.Background = 330099
+Project.Window.Header.Foreground = FFFFFF
+Project.Window.Header.Buttons.Background = CCCCCC
+Project.Window.Header.Buttons.Foreground = 000000
+Project.Messages.Background = 000033
+Project.Messages.Foreground = FFFF00
+Project.Messages.Err.Background = 000033
+Project.Messages.Err.Foreground = FF0000
+Project.Messages.Msg.Background = 000033
+Project.Messages.Msg.Foreground = 00FF00
+
+# commands window settings:
+Commands.Filename.Login = commands/LoginPanelControl.html
+Commands.Title = Tasks Window
+Commands.Args = -margins 0,10,10,0
+
+Commands.Title.Buttons = <body>\
+</body>
+# <input type='button' id='Help.Start' value='Help'/>\ commented help button
+# <input type='button' id='Commands.SkipTask' value='Skip to next task'/>\
+
+
+# messages window setting:
+Messages.Title = Messages Window
+Messages.Title.Buttons = <body>\
+<input type='button' id='Message.clear' value='Clear Messages'/>\
+</body>
+
+# wizard/coding window settings:
+Programming.Title = Work Area Window
+Programming.Title.Buttons = <input type='button' id='Help.Start' value='Help'/>
+
+
+# Help window
+# <input type='button' id='Help.Reload' value='Reload'/>\
+# <input type='button' id='Help.Edit' value='Edit'/>\
+Help.Title = Help Window
+Help.Title.Buttons = <body>\
+<input type='button' id='Help.Back' value='Back'/>\
+<input type='button' id='Help.Forward' value='Forward'/>\
+<input type='button' id='Help.Stop' value='QuitHelp' bg='FF6666'/>\
+</body>
+
+Help.Index = file:Data/Help/index.html
+Help.Stop = 
+Help.Edit.Command = myEdit.bat
+
+# table window
+# <input type='button' id='Table.Reset' value='Reset Table'/>\
+Table.Title = Table Window
+Table.Title.Buttons = <body>\
+<input type='button' id='Help.Start' value='Help' bg='66FF66'/>\
+</body>
+		
+
+# Status line
+Status = 0
+Status.Title = Status:
+Status.Title.Buttons = <body>\
+ <input type='button' id='Status.Timer' value='Refresh' timer='0,2'/>\
+ PHS: <input type='label' id='Phase' value=' - ' border='0'/>\
+ ;   CT1: <input type='label' id='Phase1Cnt' value=' - ' border='0'/>\
+ ;   CT2: <input type='label' id='Phase2Cnt' value=' - ' border='0'/>\
+ ;   CRS: <input type='label' id='Course' value=' - ' border='0'/>\
+ ;   PTM: <input type='label' id='PhaseElapsedTime.m' value=' - ' border='0'/>\
+ : <input type='label' id='PhaseElapsedTime.s' value=' - ' border='0'/>\
+ ;   TTM: <input type='label' id='TotalElapsedTime.m' value=' - ' border='0'/>\
+ : <input type='label' id='TotalElapsedTime.s' value=' - ' border='0'/>\
+</body>
+
+#other settings:
+Input.Title = Input window
+Input.Title.Buttons =  <body>\
+<input type='button' id='Help.Index' value='Help'/>\
+	<input type='button' id='Input.clear' value='Clear'/>\
+	<input type='button' id='Input.save' value='Save'/>\
+	<input type='button' id='Input.load' value='Load'/>\
+	</body>
+Project.Args = 
+HtmlPanel.Args = 
+Wizard.Title = Work Area Window
+Wizard.Title.Buttons = <body/>
+	#<body><input type='button' id='Help.Index' value='Help'/>\
+	#<input type='button' id='Wizard.Reset' value='Reset'/>\
+	#<input type='button' id='Wizard.Execute' value='Execute'/></body>
+# Wizard.Args = -margins 0,0,10,0 # -rightLeft
+
+FullScreen.args = -margins 0,0,10,0 -center
+
+
+
+# Traces
+# Format: Trace.<class>.[<instance>|Global] = [ 1 | 0 ]
+Trace.HtmlPanel.Global = 1
+
+Trace.EventProxy.Global = 0
+Trace.EventProxy. = 0
+Trace.EventProxy.Commands = 1
+Trace.EventProxy.CodingControl = 0
+Trace.EventProxy.Wizard = 0
+Trace.EventProxy.Wizard.RemAreaReg = 0
+Trace.EventProxy.Wizard.RemRowReg = 0
+Trace.EventProxy.Wizard.RemCellReg = 0
+Trace.EventProxy.Wizard.RemAreaMod = 0
+Trace.EventProxy.Wizard.RemRowMod = 0
+Trace.EventProxy.Wizard.RemCellMod = 0
+Trace.EventProxy.Wizard.MultAreaReg = 0
+Trace.EventProxy.Wizard.MultRowReg = 0
+Trace.EventProxy.Wizard.MultCellReg = 0
+Trace.EventProxy.Wizard.MultAreaMod = 0
+Trace.EventProxy.Wizard.MultRowMod = 0
+Trace.EventProxy.Wizard.MultCellMod = 0
+Trace.EventProxy.Wizard.AddAreaReg = 0
+Trace.EventProxy.Wizard.AddRowReg = 0
+Trace.EventProxy.Wizard.AddCellReg = 0
+Trace.EventProxy.Wizard.AddAreaMod = 0
+Trace.EventProxy.Wizard.AddRowMod = 0
+Trace.EventProxy.Wizard.AddCellMod = 0
+Trace.EventProxy.Monitor = 0
+
+# Logging and status directoreis:
+Log.Dir = data/www/logs
+State.Dir = data/www/states
+
+# Penalty weighting table:
+
+Project.Penalty.Course.1.Phase.1 = -10
+Project.Penalty.Course.2.Phase.1 = -10
+Project.Penalty.Course.3.Phase.1 = -5
+
+Project.Penalty.Course.1.Phase.2 = -5
+Project.Penalty.Course.2.Phase.2 = -5
+Project.Penalty.Course.3.Phase.2 = -5
+
+# No Reward weighting table:
+
+Project.NoReward.Course.1.Phase.1 = 0
+Project.NoReward.Course.2.Phase.1 = 0
+Project.NoReward.Course.3.Phase.1 = 0
+
+Project.NoReward.Course.1.Phase.2 = 0
+Project.NoReward.Course.2.Phase.2 = 0
+Project.NoReward.Course.3.Phase.2 = 0
+
+# Rewards weighting table:
+# course 1 and 2 get different rewards than course 3 =====>
+	# addition tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.1.Task.1 = 15
+			Project.Reward.Course.2.Phase.1.Task.1 = 15
+			Project.Reward.Course.3.Phase.1.Task.1 = 75
+		# row ==>    
+			Project.Reward.Course.1.Phase.1.Task.2 = 10
+			Project.Reward.Course.2.Phase.1.Task.2 = 10
+			Project.Reward.Course.3.Phase.1.Task.2 = 25
+		# cell ==>    
+			Project.Reward.Course.1.Phase.1.Task.3 = 5
+			Project.Reward.Course.2.Phase.1.Task.3 = 5
+			Project.Reward.Course.3.Phase.1.Task.3 = 25
+	# remainder tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.1.Task.4 = 20
+			Project.Reward.Course.2.Phase.1.Task.4 = 20
+			Project.Reward.Course.3.Phase.1.Task.4 = 100
+		# row ==>    
+			Project.Reward.Course.1.Phase.1.Task.5 = 15
+			Project.Reward.Course.2.Phase.1.Task.5 = 15
+			Project.Reward.Course.3.Phase.1.Task.5 = 75
+		# cell ==>    
+			Project.Reward.Course.1.Phase.1.Task.6 = 10
+			Project.Reward.Course.2.Phase.1.Task.6 = 10
+			Project.Reward.Course.3.Phase.1.Task.6 = 50
+	# multiplication tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.1.Task.7 = 15
+			Project.Reward.Course.2.Phase.1.Task.7 = 15
+			Project.Reward.Course.3.Phase.1.Task.7 = 75
+		# row ==>    
+			Project.Reward.Course.1.Phase.1.Task.8 = 10
+			Project.Reward.Course.2.Phase.1.Task.8 = 10
+			Project.Reward.Course.3.Phase.1.Task.8 = 50
+		# cell ==>    
+			Project.Reward.Course.1.Phase.1.Task.9 = 5
+			Project.Reward.Course.2.Phase.1.Task.9 = 5
+			Project.Reward.Course.3.Phase.1.Task.9 = 25
+
+# phase 2 ===> all courses get same reward =====>
+	# addition tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.2.Task.1 = 75
+			Project.Reward.Course.2.Phase.2.Task.1 = 75
+			Project.Reward.Course.3.Phase.2.Task.1 = 75
+		# row ==>    
+			Project.Reward.Course.1.Phase.2.Task.2 = 50
+			Project.Reward.Course.2.Phase.2.Task.2 = 50
+			Project.Reward.Course.3.Phase.2.Task.2 = 50
+		# cell ==>    
+			Project.Reward.Course.1.Phase.2.Task.3 = 25
+			Project.Reward.Course.2.Phase.2.Task.3 = 25
+			Project.Reward.Course.3.Phase.2.Task.3 = 25
+	# remainder tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.2.Task.4 = 100
+			Project.Reward.Course.2.Phase.2.Task.4 = 100
+			Project.Reward.Course.3.Phase.2.Task.4 = 100
+		# row ==>    
+			Project.Reward.Course.1.Phase.2.Task.5 = 75
+			Project.Reward.Course.2.Phase.2.Task.5 = 75
+			Project.Reward.Course.3.Phase.2.Task.5 = 75
+		# cell ==>    
+			Project.Reward.Course.1.Phase.2.Task.6 = 50
+			Project.Reward.Course.2.Phase.2.Task.6 = 50
+			Project.Reward.Course.3.Phase.2.Task.6 = 50
+	# Multiplication tasks ===>
+		# area ==>    
+			Project.Reward.Course.1.Phase.2.Task.7 = 75
+			Project.Reward.Course.2.Phase.2.Task.7 = 75
+			Project.Reward.Course.3.Phase.2.Task.7 = 75
+		# row ==>    
+			Project.Reward.Course.1.Phase.2.Task.8 = 50
+			Project.Reward.Course.2.Phase.2.Task.8 = 50
+			Project.Reward.Course.3.Phase.2.Task.8 = 50
+		# cell ==>    
+			Project.Reward.Course.1.Phase.2.Task.9 = 25
+			Project.Reward.Course.2.Phase.2.Task.9 = 25
+			Project.Reward.Course.3.Phase.2.Task.9 = 25
+
+# list of command panels:
+# for phase 1:
+# 		task 1:
+			Commands.Filename.Course.1.Phase.1.1 = commands/WizardPanelControl_AddArea.html
+			Wizard.Filename.Course.1.Phase.1.1   = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.1 = commands/ModWizardPanelControl_AddArea.html
+			Wizard.Filename.Course.2.Phase.1.1   = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.1 = commands/CodingPanelControl_AddArea.html
+			Wizard.Filename.Course.3.Phase.1.1   = panels/coding.html
+
+#		task 2:
+			Commands.Filename.Course.1.Phase.1.2 = commands/WizardPanelControl_AddRow.html
+			Wizard.Filename.Course.1.Phase.1.2 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.2 = commands/ModWizardPanelControl_AddRow.html
+			Wizard.Filename.Course.2.Phase.1.2 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.2 = commands/CodingPanelControl_AddRow.html 
+			Wizard.Filename.Course.3.Phase.1.2 = panels/coding.html
+
+#		task 3:
+			Commands.Filename.Course.1.Phase.1.3 = commands/WizardPanelControl_AddCell.html
+			Wizard.Filename.Course.1.Phase.1.3 = panels/empty_wizard_panel.html
+
+			Commands.Filename.Course.2.Phase.1.3 = commands/ModWizardPanelControl_AddCell.html
+			Wizard.Filename.Course.2.Phase.1.3 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.3 = commands/CodingPanelControl_AddCell.html 
+			Wizard.Filename.Course.3.Phase.1.3 = panels/coding.html
+
+#		task 4:
+			Commands.Filename.Course.1.Phase.1.4 = commands/WizardPanelControl_RemArea.html
+			Wizard.Filename.Course.1.Phase.1.4 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.4 = commands/ModWizardPanelControl_RemArea.html
+			Wizard.Filename.Course.2.Phase.1.4 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.4 = commands/CodingPanelControl_RemArea.html 
+			Wizard.Filename.Course.3.Phase.1.4 = panels/coding.html
+
+#		task 5:
+			Commands.Filename.Course.1.Phase.1.5 = commands/WizardPanelControl_RemRow.html
+			Wizard.Filename.Course.1.Phase.1.5 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.5 = commands/ModWizardPanelControl_RemRow.html
+			Wizard.Filename.Course.2.Phase.1.5 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.5 = commands/CodingPanelControl_RemRow.html 
+			Wizard.Filename.Course.3.Phase.1.5 = panels/coding.html
+
+#		task 6:
+			Commands.Filename.Course.1.Phase.1.6 = commands/WizardPanelControl_RemCell.html
+			Wizard.Filename.Course.1.Phase.1.6 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.6 = commands/ModWizardPanelControl_RemCell.html
+			Wizard.Filename.Course.2.Phase.1.6 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.6 = commands/CodingPanelControl_RemCell.html 
+			Wizard.Filename.Course.3.Phase.1.6 = panels/coding.html
+
+#		task 7:
+			Commands.Filename.Course.1.Phase.1.7 = commands/WizardPanelControl_MultArea.html
+			Wizard.Filename.Course.1.Phase.1.7 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.7 = commands/ModWizardPanelControl_MultArea.html
+			Wizard.Filename.Course.2.Phase.1.7 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.7 = commands/CodingPanelControl_MultArea.html 
+			Wizard.Filename.Course.3.Phase.1.7 = panels/coding.html
+
+#		task 8:
+			Commands.Filename.Course.1.Phase.1.8 = commands/WizardPanelControl_MultRow.html
+			Wizard.Filename.Course.1.Phase.1.8 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.2.Phase.1.8 = commands/ModWizardPanelControl_MultRow.html
+			Wizard.Filename.Course.2.Phase.1.8 = panels/empty_wizard_panel.html
+	
+			Commands.Filename.Course.3.Phase.1.8 = commands/CodingPanelControl_MultRow.html 
+			Wizard.Filename.Course.3.Phase.1.8 = panels/coding.html
+
+#		task 9:
+			Commands.Filename.Course.1.Phase.1.9 = commands/WizardPanelControl_MultCell.html
+			Wizard.Filename.Course.1.Phase.1.9 = panels/empty_wizard_panel.html
+
+			Commands.Filename.Course.2.Phase.1.9 = commands/ModWizardPanelControl_MultCell.html
+			Wizard.Filename.Course.2.Phase.1.9 = panels/empty_wizard_panel.html
+
+			Commands.Filename.Course.3.Phase.1.9 = commands/CodingPanelControl_MultCell.html 
+			Wizard.Filename.Course.3.Phase.1.9 = panels/coding.html
+
+
+# for phase 2: (all the same:
+#		task 1:
+			Commands.Filename.Course.1.Phase.2.1 = commands/CodingPanelControl_AddArea.html
+			Wizard.Filename.Course.1.Phase.2.1 = panels/coding.html
+				
+			Commands.Filename.Course.2.Phase.2.1 = commands/CodingPanelControl_AddArea.html
+			Wizard.Filename.Course.2.Phase.2.1 = panels/coding.html
+				
+			Commands.Filename.Course.3.Phase.2.1 = commands/CodingPanelControl_AddArea.html 
+			Wizard.Filename.Course.3.Phase.2.1 = panels/coding.html
+
+#		task 2:
+			Commands.Filename.Course.1.Phase.2.2 = commands/CodingPanelControl_AddRow.html
+			Wizard.Filename.Course.1.Phase.2.2 = panels/coding.html
+			
+			Commands.Filename.Course.2.Phase.2.2 = commands/CodingPanelControl_AddRow.html
+			Wizard.Filename.Course.2.Phase.2.2 = panels/coding.html
+			
+			Commands.Filename.Course.3.Phase.2.2 = commands/CodingPanelControl_AddRow.html 
+			Wizard.Filename.Course.3.Phase.2.2 = panels/coding.html
+
+#		task 3:
+			Commands.Filename.Course.1.Phase.2.3 = commands/CodingPanelControl_AddCell.html
+			Wizard.Filename.Course.1.Phase.2.3 = panels/coding.html
+		
+			Commands.Filename.Course.2.Phase.2.3 = commands/CodingPanelControl_AddCell.html
+			Wizard.Filename.Course.2.Phase.2.3 = panels/coding.html
+		
+			Commands.Filename.Course.3.Phase.2.3 = commands/CodingPanelControl_AddCell.html 
+			Wizard.Filename.Course.3.Phase.2.3 = panels/coding.html
+
+#		task 4:
+			Commands.Filename.Course.1.Phase.2.4 = commands/CodingPanelControl_RemArea.html
+			Wizard.Filename.Course.1.Phase.2.4 = panels/coding.html
+		
+			Commands.Filename.Course.2.Phase.2.4 = commands/CodingPanelControl_RemArea.html
+			Wizard.Filename.Course.2.Phase.2.4 = panels/coding.html
+		
+			Commands.Filename.Course.3.Phase.2.4 = commands/CodingPanelControl_RemArea.html 
+			Wizard.Filename.Course.3.Phase.2.4 = panels/coding.html
+
+#		task 5:
+			Commands.Filename.Course.1.Phase.2.5 = commands/CodingPanelControl_RemRow.html
+			Wizard.Filename.Course.1.Phase.2.5 = panels/coding.html
+	
+			Commands.Filename.Course.2.Phase.2.5 = commands/CodingPanelControl_RemRow.html
+			Wizard.Filename.Course.2.Phase.2.5 = panels/coding.html
+	
+			Commands.Filename.Course.3.Phase.2.5 = commands/CodingPanelControl_RemRow.html 
+			Wizard.Filename.Course.3.Phase.2.5 = panels/coding.html
+
+#		task 6:
+			Commands.Filename.Course.1.Phase.2.6 = commands/CodingPanelControl_RemCell.html
+			Wizard.Filename.Course.1.Phase.2.6 = panels/coding.html
+
+			Commands.Filename.Course.2.Phase.2.6 = commands/CodingPanelControl_RemCell.html
+			Wizard.Filename.Course.2.Phase.2.6 = panels/coding.html
+
+			Commands.Filename.Course.3.Phase.2.6 = commands/CodingPanelControl_RemCell.html 
+			Wizard.Filename.Course.3.Phase.2.6 = panels/coding.html
+
+#		task 7:
+			Commands.Filename.Course.1.Phase.2.7 = commands/CodingPanelControl_MultArea.html
+			Wizard.Filename.Course.1.Phase.2.7 = panels/coding.html
+
+			Commands.Filename.Course.2.Phase.2.7 = commands/CodingPanelControl_MultArea.html
+			Wizard.Filename.Course.2.Phase.2.7 = panels/coding.html
+
+			Commands.Filename.Course.3.Phase.2.7 = commands/CodingPanelControl_MultArea.html 
+			Wizard.Filename.Course.3.Phase.2.7 = panels/coding.html
+
+#		task 8:
+			Commands.Filename.Course.1.Phase.2.8 = commands/CodingPanelControl_MultRow.html
+			Wizard.Filename.Course.1.Phase.2.8 = panels/coding.html
+
+			Commands.Filename.Course.2.Phase.2.8 = commands/CodingPanelControl_MultRow.html
+			Wizard.Filename.Course.2.Phase.2.8 = panels/coding.html
+
+			Commands.Filename.Course.3.Phase.2.8 = commands/CodingPanelControl_MultRow.html
+			Wizard.Filename.Course.3.Phase.2.8 = panels/coding.html
+
+#		task 9:
+			Commands.Filename.Course.1.Phase.2.9 = commands/CodingPanelControl_MultCell.html
+			Wizard.Filename.Course.1.Phase.2.9 = panels/coding.html
+
+			Commands.Filename.Course.2.Phase.2.9 = commands/CodingPanelControl_MultCell.html
+			Wizard.Filename.Course.2.Phase.2.9 = panels/coding.html
+
+			Commands.Filename.Course.3.Phase.2.9 = commands/CodingPanelControl_MultCell.html 
+			Wizard.Filename.Course.3.Phase.2.9 = panels/coding.html
+
+
+# connecting the filenames for the wizard panels for menu access names:
+
+#		empty panel:
+			 Wizard.Filename.Empty = panels/empty_wizard_panel.html
+			 			
+#		coding panel:
+			 Wizard.Filename.Coding = panels/coding.html
+
+# For Regular Wizard:
+#		no remainder tools:		
+			 Wizard.Filename.RemCellReg = panels/rem_cell_reg.html
+			 Wizard.Filename.RemAreaReg = panels/rem_area_reg.html
+			 Wizard.Filename.RemRowReg = panels/rem_row_reg.html
+
+#		 Add a number tools:		
+			 Wizard.Filename.AddCellReg = panels/add_cell_reg.html
+			 Wizard.Filename.AddAreaReg = panels/add_area_reg.html
+			 Wizard.Filename.AddRowReg = panels/add_row_reg.html
+
+#		 Multiply by tools:		
+			 Wizard.Filename.MultCellReg = panels/mult_cell_reg.html
+			 Wizard.Filename.MultAreaReg = panels/mult_area_reg.html
+			 Wizard.Filename.MultRowReg = panels/mult_row_reg.html
+
+# For Modified Wizard:
+#		no remainder tools:		
+			 Wizard.Filename.RemCellMod = panels/rem_cell_mod.html
+			 Wizard.Filename.RemAreaMod = panels/rem_area_mod.html
+			 Wizard.Filename.RemRowMod = panels/rem_row_mod.html
+
+# Add a number tools:		
+			 Wizard.Filename.AddCellMod = panels/add_cell_mod.html
+			 Wizard.Filename.AddAreaMod = panels/add_area_mod.html
+			 Wizard.Filename.AddRowMod = panels/add_row_mod.html
+
+# Multiply by tools:		
+			Wizard.Filename.MultCellMod = panels/mult_cell_mod.html
+			Wizard.Filename.MultAreaMod = panels/mult_area_mod.html
+			Wizard.Filename.MultRowMod  = panels/mult_row_mod.html
+
+
+
+# help file locations
+Help.Filename.Course.1.Phase.1.1 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.2 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.3 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.4 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.5 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.6 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.7 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.8 = HelpIndexWizard.html
+Help.Filename.Course.1.Phase.1.9 = HelpIndexWizard.html
+
+Help.Filename.Course.2.Phase.1.1 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.2 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.3 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.4 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.5 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.6 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.7 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.8 = HelpIndexModWizard.html
+Help.Filename.Course.2.Phase.1.9 = HelpIndexModWizard.html
+
+Help.Filename.Course.3.Phase.1.1 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.2 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.3 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.4 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.5 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.6 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.7 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.8 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.1.9 = HelpIndexCoding.html
+
+Help.Filename.Course.1.Phase.2.1 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.2 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.3 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.4 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.5 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.6 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.7 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.8 = HelpIndexCoding.html
+Help.Filename.Course.1.Phase.2.9 = HelpIndexCoding.html
+
+Help.Filename.Course.2.Phase.2.1 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.2 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.3 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.4 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.5 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.6 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.7 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.8 = HelpIndexCoding.html
+Help.Filename.Course.2.Phase.2.9 = HelpIndexCoding.html
+
+Help.Filename.Course.3.Phase.2.1 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.2 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.3 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.4 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.5 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.6 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.7 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.8 = HelpIndexCoding.html
+Help.Filename.Course.3.Phase.2.9 = HelpIndexCoding.html

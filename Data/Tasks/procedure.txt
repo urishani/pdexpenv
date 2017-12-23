@@ -1,0 +1,62 @@
+the experimental procedure:
+
+	1. subject is given an identification number.
+	2. subject is assigned to an experimental group:
+		2.1. regular wizard
+		2.2. modified wizard
+		2.3. code only
+	3. subject starts the experiment:
+		3.1. initial phase: subject performs the tasks using
+			 the interface assigned to him:
+			3.1.1. regular wizard
+			3.1.2. modified wizard
+			3.1.3. code interface
+		3.2. transfer phase: subject performs the tasks using
+			 the code interface only
+	4. description of tasks: all subjects get tasks from the same task pool
+		4.1. task types:
+			4.1.1. addition tasks
+			4.1.2. multiplication tasks
+			4.1.3. remainder tasks (REM) --> more difficult than the other two types
+		4.2. all tasks involve changing the data in a range of cells
+			 (an area made of rows and columns). 
+		4.3. this SHOULD be possible to do with the single use of only one wizard, 
+			 but it is possible to also do this  with several uses 
+			 of a wizard(s) --> like using the row wizard
+			 on two rows instead of using the area tool.
+		4.3. examples of task description: the range of cells (rows and columns), 
+			 number to add/nultiply/divide by (and the new value to enter if it 
+			 divides without a remainder) are all randomly generated.
+			"change the cell value, of the cells from row 3 to row 5, 
+			 and from column 4 to 11, so that the new value is 2 times 
+			 it's current value"
+			"change the cell value, of the cells from row 6 to row 9, 
+			 and from column 7 to 14, so that the new value is bigger by 15 
+			 than it's current value"
+			 "change the cell value, of the cells from row 13 to row 15, 
+			 and from column 1 to 4, to 999, if it's current value is divisable
+			 by 4 without leaving a remainder"
+		4.4. a correct solution is achieved when the cells within the specified range 
+			 all have the new values specified by the task description. the way the 
+			 subject reaches the correct end result is not a criteria for a successful
+			 solution.
+		4.5. if the subject applies a wizard/code without reaching the correct result, 
+			 he/she may either: continue from that point with an additional 
+			 wizard/code (number of additional wizard/code applied in a block 
+			 are counted); reset the table to it's initial values (number of 
+			 reset tasks in a block are counted); or skip the task and recieve
+			 a new task description (number of incorrect tasks in a block are counted).
+	5. experimental phase:
+		5.1. composed of 5 or 10 minute block
+		5.2. in each block, subjects are given tasks for completion
+		5.3. if a task is completed/skipped a new task is given.
+		5.4. at the end of the round the number of completed/skipped/reset tasks
+			 are summed - these are 3 of the dependent variables of the experiment.
+		5.5. after each block, the subject is given a short break (waiting for subject
+			 to give ok to continue).
+		5.6. after a set amount of blocks, the subject is transfered to the 
+			 code interface for the transfer phase (all have the same interface).
+		5.7. the process is repeated for the transfer phase.
+		5.8. all the blocks in the initial and transfer phases are tallied 
+			 separately.
+			 

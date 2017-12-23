@@ -1,0 +1,30 @@
+the workflow for the subject:
+============================ start of experiment ===================================
+1.  enter user id number and meta data (age, sex, education...) 
+============================ start of first phase ==================================
+2.  start first phase
+3.  5 minutes to familirize with the environment
+4.  present first task in first block.
+5.  perform task with assigned interface (wizard {modified/regular} / code)
+	 	a. task competed correctly - present next task.
+	 	b. task incompleted and reset - perform task again.
+	 	c. task incompleted and skip - present next task.
+6.  after 5 or 10 minutes (need to decide) - end of block
+7.  short break before next block (wait for subject to click to continue)
+8.  start next block of 5 or 10 minutes.
+9.  after a set amount of blocks, move to second phase.
+============================ start of second phase =================================
+10. 5 minutes to familirize with environment (or break for the initial coding group)
+11. present first task
+12. perform task with the coding interface.
+	 	a. task competed correctly - present next task.
+	 	b. task incompleted and reset - perform task again.
+     	c. task incompleted and skip - present next task.
+13. after 5 or 10 minutes (need to decide) - end of block
+14. short break before next block (wait for subject to click to continue)
+15. start next block of 5 or 10 minutes.
+16. after a set amount of blocks, end second phase.
+=========================== end of phase two ======================================
+17. debriefing screen.
+18. saving recorded data to a file.
+=========================== end of experiment =====================================

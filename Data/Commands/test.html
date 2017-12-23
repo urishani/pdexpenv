@@ -1,0 +1,70 @@
+<body>
+<property id='var' color='FF00FF' bold='1'/>
+<property id='cmnd' color='0000FF' bold='1'/>
+<property id='reg' color='000000' bold='1'/>
+
+Fonts can be (all in size=16):<br/>
+<input type='label' fontName='Symbol' value='Symbol' fontSize='16'/><br/>
+<input type='label' fontName='Dialog' value='Dialog' fontSize='16'/><br/>
+<input type='label' fontName='DialogInput' value='DialogInput' fontSize='16'/><br/>
+<input type='label' fontName='Monospaced' value='Monospaced' fontSize='16'/><br/>
+<input type='label' fontName='Serif' value='Serif' fontSize='16'/><br/>
+<input type='label' fontName='SansSerif' value='SansSerif' fontSize='16'/><br/>
+<input type='label' fontName='Times New Roman' value='Times New Roman' fontSize='16'/><br/>
+<input type='label' fontName='Tahoma' value='Tahoma' fontSize='16'/><br/>
+<br/>
+
+  יש להוסיף<input type='label' id='addValue'  fontName='Serif' color='00FF00' value='   ABCDabcd   '/> 
+   לערך של כל תא שנמצא בין שורה
+<input type='label' id='rowStart' property='reg' value='  B    '/> <lt/>
+  ועד שורה
+<input type='label' id='rowEnd' color= '0000FF' bg= '00FF00' fontSize='24' bold='0' italic='1' value='     C   '/> <br/>
+   ומעמודה
+<input type='label' id='colStart' value='   D   '/> עד עמודה 
+<input type='label' id='colEnd' value='   E   '/>  <br/>
+
+
+<include name='data/commands/ModWizardButtons.html'/>
+<br/>
+</body>
+
+table[r,c]
+<input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='reg'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='reg'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='reg'/>
+:=
+<input type='label' value=':= ' property='symbl'/>
+;
+<input type='label' value=' ;' property='reg'/>
+for
+<input type='label' value='for ' property='cmnd'/>
+to
+<input type='label' value='to ' property='cmnd'/>
+next column
+<input type='label' value='next ' property='cmnd'/>
+<input type='label' value='Column ' property='var'/>
+next row
+<input type='label' value='next ' property='cmnd'/>
+<input type='label' value='Row ' property='var'/>
+if
+<input type='label' value='if' property='cmnd'/>
+endif
+<input type='label' value='endif' property='cmnd'/>
+loop
+<input type='label' value='loop' property='cmnd'/>
+Row
+<input type='label' value='Row ' property='var'/>
+Column
+<input type='label' value='Column ' property='var'/>
+row, column
+<input type='label' value='Row, Column' property='var'/>
++
+<input type='label' value='+' property='symbl'/>
+
+
+
+
+

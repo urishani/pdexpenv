@@ -1,0 +1,49 @@
+<html>
+<header>
+<title>Status of test @TestNumber; for subject @SubjectNumber;</title>
+</header>
+<body>
+<B>Status Report [@IP;]</b><br>
+<table>
+<tr><td>Test ID:<td colskip=2>@testId;
+<tr><td>User:<td colskip=2>@user;
+<tr><td>Phase:<td colskip=2>@Phase;
+<tr><td>Course:<td colskip=2>@Course;
+<tr><td>Phase 1 Cnt:<td colskip=2>@Phase1Cnt;
+<tr><td>Phase 2 Cnt:<td colskip=2>@Phase2Cnt;
+<tr><td>Task:<td>#: @Task; total: <td>@Tasks;
+<tr><td>Score:<td>: @Reward; total: <td>@Score;
+<tr><td>AddArea:<td>#Good: @TaskGood1; #Bad: <td>@TaskBad1; <td>showcode: <td> @CodeShown1;
+<tr><td>AddRow:<td>#Good: @TaskGood2; #Bad: <td>@TaskBad2; <td>showcode: <td> @CodeShown2;
+<tr><td>AddCol:<td>#Good: @TaskGood3; #Bad: <td>@TaskBad3; <td>showcode: <td> @CodeShown3;
+<tr><td>RemArea:<td>#Good: @TaskGood4; #Bad: <td>@TaskBad4; <td>showcode: <td> @CodeShown4;
+<tr><td>RemRow:<td>#Good: @TaskGood5; #Bad: <td>@TaskBad5; <td>showcode: <td> @CodeShown5;
+<tr><td>RemCol:<td>#Good: @TaskGood6; #Bad: <td>@TaskBad6; <td>showcode: <td> @CodeShown6;
+<tr><td>MultArea:<td>#Good: @TaskGood7; #Bad: <td>@TaskBad7; <td>showcode: <td> @CodeShown7;
+<tr><td>MultRow:<td>#Good: @TaskGood8; #Bad: <td>@TaskBad8; <td>showcode: <td> @CodeShown8;
+<tr><td>MultCol:<td>#Good: @TaskGood9; #Bad: <td>@TaskBad9; <td>showcode: <td> @CodeShown9;
+<tr><td>Elapsed time:<td>Current phase:<td>@PhaseElapsedTime.m;:@PhaseElapsedTime.s; minutes
+<tr><td><td>Total:<td>@TotalElapsedTime.m;:@TotalElapsedTime.s; minutes
+</table>
+<form>
+<input type='button' value='Set Next Task' onClick='_setNextTask();'>
+<input id='nextTask' value='-1'><br>
+<input type='button' value='Next Phase' onClick='_nextPhase();'>
+<input type='button' value='Next Task' onClick='_nextTask();'>
+<input type='button' value='Home' onClick='_home();'>
+<input type='button' value='Refresh' onClick='_refresh();'>
+</form>
+<script>
+function _setNextTask()
+{
+	task=document.forms[0].nextTask.value;
+	if (task.length < 1) task='-1';
+	document.location='Status.Monitor.SetNextTask.' + task + '.html';
+}
+function _nextPhase(){document.location='Status.Monitor.NextPhase.html';}
+function _nextTask(){document.location='Status.Monitor.NextTask.html';}
+function _home(){document.location='index.html';}
+function _refresh(){document.location='Status.Monitor.html';}
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<body>
+<include name='data/Panels/styles.html'/>
+<input type='label' value='Remainder for Row Wizard:' property='title'/><br/>
+  <input type='label' value='This wizard puts a number in cells in selected columns of a row' property='reg'/><br/>
+  <input type='label' value='when they are divisable by a number without leaving a remainder:' property='reg'/><br/>
+  <br/>
+    <input type='label' value='Row ' property='var'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='rowIndex' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # Variable for row' property='comment'/><br/>
+
+    <input type='label' value='for' property='cmnd'/> 
+<input type='label' value='Column ' property='var'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='colStart' value='' cols='5' property='inputbox'/> 
+<input type='label' value='to' property='cmnd'/> 
+<input type='textbox' id='colEnd' value='' cols='5' property='inputbox'/> 
+<input type='label' value='loop' property='cmnd'/>
+<input type='label' value='  # start column loop' property='comment'/><br/>
+
+        <input type='label' value='if ' property='cmnd'/>
+<input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value='REM ' property='symbl'/>
+<input type='textbox' id='divideBy' value='' cols='5' property='inputbox'/>
+<input type='label' value=' = ' property='symbl'/>
+<input type='label' value='0 ' property='reg'/>
+<input type='label' value='do ' property='cmnd'/>
+<input type='label' value=' # if remainder is 0' property='comment'/><br/>
+<input type='label' value='       # REM: remainder of cell / number' property='comment'/><br/>
+
+           <input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='markWith' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='   ' property='comment'/><br/>
+
+           <input type='label' value='# When the "if" is true: the cell referenced = a number' property='comment'/><br/>
+
+        <input type='label' value='endif' property='cmnd'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value=' # end if statement' property='comment'/><br/>
+
+    <input type='label' value='next ' property='cmnd'/>
+<input type='label' value='Column ' property='var'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # end column loop' property='comment'/><br/>
+
+<input type='label' value=' ' property='spacer'/>            <br/>
+  <br/>
+<include name='data/Panels/ModWizardBottom.html'/><br/>
+<include name='data/Panels/legend.html'/><br/>
+ <br/>
+ <br/>
+ <br/>
+___________________________________________________________<br/>
+ 
+</body>

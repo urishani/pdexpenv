@@ -1,0 +1,22 @@
+a:=8+5+-1;
+
+A := '5';
+B := 0;
+while A < B+20 loop
+	A := (A+2)+3 * B;
+	while  5 < A loop
+		A := (A - 1);
+		B := B - 10 ;
+	end loop;
+	A := A + 1;
+end loop;
+for X:= 1 to 5 loop
+   C := 'X= ';
+   print C;
+   println X;
+next X;
+C := 'abc';
+println C;
+println A;
+println B;
+println A + B ;

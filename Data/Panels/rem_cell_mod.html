@@ -1,0 +1,64 @@
+<body>
+<include name='data/Panels/styles.html'/>
+<input type='label' value='Remainder for Cell Wizard:' property='title'/><br/>
+  <input type='label' value='This wizard puts a number in a cell on a selected row and column ' property='reg'/><br/>
+  <input type='label' value='when it is divisable by a number without leaving a remainder:' property='reg'/><br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+
+    <input type='label' value='Row ' property='var'/>
+<input type='label' value=':= ' property='symbl'/> 
+<input type='textbox' id='rowIndex' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # Variable for row' property='comment'/><br/>
+
+    <input type='label' value='Column ' property='var'/>
+<input type='label' value=':= ' property='symbl'/> 
+<input type='textbox' id='colIndex' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # Variable for column' property='comment'/><br/>
+
+
+        <input type='label' value='if ' property='cmnd'/>
+<input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value='REM ' property='symbl'/>
+<input type='textbox' id='divideBy' value='' cols='5' property='inputbox'/>
+<input type='label' value=' = ' property='symbl'/>
+<input type='label' value='0 ' property='reg'/>
+<input type='label' value='do ' property='cmnd'/>
+<input type='label' value=' # if remainder is 0' property='comment'/><br/>
+<input type='label' value='       # REM: remainder of cell / number' property='comment'/><br/>
+
+           <input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='markWith' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='   ' property='comment'/><br/>
+<input type='label' value='         # When the "if" is true: the cell referenced = a number' property='comment'/><br/>
+
+
+        <input type='label' value='endif' property='cmnd'/>
+<input type='label' value=' ;' property='reg'/>
+<input type='label' value=' # end of if statement' property='comment'/><br/>
+
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+
+
+<include name='data/Panels/ModWizardBottom.html'/><br/>
+<include name='data/Panels/legend.html'/><br/>
+ <br/>
+ <br/>
+ <br/>
+___________________________________________________________<br/>		
+</body>

@@ -1,0 +1,62 @@
+<body>
+<include name='data/Panels/styles.html'/>		
+<input type='label' value='Add to Row Wizard:' property='title'/><br/>
+  <input type='label' value='This wizard adds to the value of the cells ' property='reg'/><br/>
+  <input type='label' value='in the selected columns of a row: ' property='reg'/><br/>
+
+   <br/>
+
+    <input type='label' value='Row ' property='var'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='rowIndex' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # Variable for row' property='comment'/>
+<br/>
+
+    <input type='label' value='for' property='cmnd'/> 
+<input type='label' value='Column ' property='var'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='textbox' id='colStart' value='' cols='5' property='inputbox'/> 
+<input type='label' value='to' property='cmnd'/> 
+<input type='textbox' id='colEnd' value='' cols='5' property='inputbox'/> 
+<input type='label' value='loop' property='cmnd'/> 
+<input type='label' value='  # start column loop' property='comment'/><br/>
+<br/>
+
+        <input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value=':= ' property='symbl'/>
+<input type='label' value='Table' property='cmnd'/>
+<input type='label' value='[' property='symbl'/>
+<input type='label' value='Row' property='var'/>
+<input type='label' value=', ' property='symbl'/>
+<input type='label' value='Column' property='var'/>
+<input type='label' value='] ' property='symbl'/>
+<input type='label' value=' + ' property='symbl'/>
+<input type='textbox' id='addValue' value='' cols='5' property='inputbox'/>
+<input type='label' value=' ;' property='symbl'/><br/>
+<input type='label' value='      # table cell = table cell + number ' property='comment'/><br/>
+
+
+    <input type='label' value='next ' property='cmnd'/>
+<input type='label' value='Column ' property='var'/>
+<input type='label' value=' ;' property='symbl'/>
+<input type='label' value='  # end column loop' property='comment'/><br/>
+
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+<input type='label' value=' ' property='spacer'/>            <br/>
+  <br/>
+
+<include name='data/Panels/ModWizardBottom.html'/><br/>
+<include name='data/Panels/legend.html'/>		<br/>
+
+___________________________________________________________<br/>
+
+</body>

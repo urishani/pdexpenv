@@ -1,0 +1,35 @@
+<experiment>
+	<step id='step 1'>
+		<fullScreen>
+			<source File='filename'/>
+			<text>Some text</text>
+			<nextChoices>
+				<button display='name' target='coding'>
+					<condition conditionName='name' conditionValue='val'/>
+					<actions>
+						<setCondition conditionName='courseNum' conditionVal='1/>
+					</actions>
+				</button>
+				<timer display='10' target='coding' delay='10'
+					<condition conditionName='name' conditionValue='val'/>
+					<actions>
+						<setCondition conditionName='courseNum' conditionVal='1/>
+					</actions>
+				</timer>
+				<timer target='coding' delay='10'/>
+			</nextChoices>
+		</fullScreen>
+	</step>
+	<step id='coding'>
+		<testScreen>
+			<commands File='filename'/>
+			<wizard file='fileName'/>
+			<help file='fileName'/>
+			<table rows='15' cols='15' method='random'/>
+			<testChoices delay='10'>
+				<nextAutoChoice coditionName='courseNum' conditionVal='1' target='auto1'/>
+				<nextAutoChoice coditionName='courseNum' conditionVal='2' target='auto2'/>
+			</testChoices>
+		</testScreen>
+	</step>
+</experiment>

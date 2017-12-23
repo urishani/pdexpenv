@@ -1,0 +1,25 @@
+<body>
+<include name='data/Panels/styles.html'/>
+<input type='label' value='Remainder for  Row Wizard:' property='title'/><br/>
+  <input type='label' value='This wizard puts a number in cells in selected columns of a row' property='reg'/><br/>
+  <input type='label' value='when they are divisable by a number without leaving a remainder:' property='reg'/><br/>
+
+  <br/>
+
+     <input type='label' value='Select cells on row: ' property='reg'/>
+<input type='textbox' id='rowIndex' value='' cols='5' property='inputbox'/>  <br/>
+
+     <input type='label' value='Select cells from column: ' property='reg'/>
+<input type='textbox' id='colStart' value='' cols='5' property='inputbox'/> 
+<input type='label' value='to column: ' property='reg'/>
+<input type='textbox' id='colEnd' value='' cols='5' property='inputbox'/> <br/>
+
+     <input type='label' value='Check remainder of selected cells when divided by: ' property='reg'/>
+<input type='textbox' id='divideBy' value='' cols='5' property='inputbox'/><br/>
+
+     <input type='label' value='Put the number: ' property='reg'/>
+<input type='textbox' id='markWith' value='' cols='5' property='inputbox'/>
+<input type='label' value=' if there is no remainder.' property='reg'/><br/>
+   <br/>
+<include name='data/Panels/WizardBottom.html'/><br/>
+</body>
